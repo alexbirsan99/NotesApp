@@ -1,0 +1,27 @@
+<div class="modal-content add-tag-card" style="overflow:visible !important;">
+    <div class="modal-header" style="text-align: center; padding:0px !important; margin: 0px !important">
+        <div class="fluid-container col-12">
+            <input id="title" class="col-12 form-control title" name="title" type="text" [value]="currentTag.name" />
+        </div>
+    </div>
+    <div class="modal-body">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item" *ngFor="let color of colors; let i=index" (click) = "selectedColor = color" [ngStyle]="getBackgroundColor(color.id)">
+                <div class="row" style="padding: 8px;">
+                    <div class="col-2" [ngStyle]="{'background-color': '#' + color.hexCode}" style="width: 30px; height: 30px; border-radius: 100%;"></div>
+                    <div class="col-10" style="padding: 3px 0px;">
+                        <p style="margin: 0px 16px;">
+                            {{color.name}}
+                        </p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="row" style="padding: 24px !important; padding-bottom: 20px !important;">
+        <div class="d-flex justify-content-end">
+            <button type="button" class="btn btn-secondary" style="margin-right: 8px;" data-dismiss="modal" (click)="modalTag.close()">Close</button>
+            <button type="submit" class="btn btn-primary" (click)="primaryButtonAction()">{{buttonText}}</button>
+        </div>
+    </div>
+</div>

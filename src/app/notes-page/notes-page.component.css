@@ -1,0 +1,140 @@
+.title {
+    font-weight: 700;
+    font-size: 24px;
+    margin-left: 16px;
+    margin-right: 16px;
+    border: 0;
+    font-size: 30px;
+}
+
+#noteDescription {
+    height: 300px !important;
+    vertical-align: top !important;
+    resize: none !important;
+    margin-left: 16px;
+    margin-right: 16px;
+    border: 0;
+}
+
+#noteDescription:focus {
+    border: 0 !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+#noteDescription:hover {
+    border: 0 !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.title:focus {
+    border: 0 !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.title:hover {
+    border: 0 !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.add-note-container {
+    position: fixed !important;
+    bottom: 0% !important;
+    right: 0% !important;
+    padding-bottom: 48px;
+    padding-right: 48px;
+    z-index: 100;
+}
+
+.add-note {
+    height: 60px;
+    width: 60px;
+    border-radius: 100px;
+    font-size: 32px;
+    padding: 0px !important;
+    box-shadow: 0px 0px 20px #888888;
+    z-index: 100;
+}
+
+.add-image {
+    border-color: grey;
+}
+
+.note-image {
+    background-size: cover;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 15vh;
+}
+
+.image-card {
+    width: 100px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+.image-list {
+    list-style-type: none;
+}
+
+#images ul {
+    list-style: none;
+    display: inline;
+    margin-left: 0px;
+    padding: 0px;
+}
+
+#images li {
+    display: inline;
+}
+
+.image-upload>input {
+    display: none;
+}
+
+.row {
+    margin: 0px !important;
+}
+
+.input-group {
+    padding: 48px;
+    border-radius: 60px;
+}
+
+#tagDropDown {
+    border-radius: 0px !important;
+    border-top-left-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+    padding: 8px;
+    padding-left: 16px !important;
+}
+
+.search {
+    margin: 0px !important;
+    border-radius: 0px !important;
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    height: 100%;
+}
+
+.clearTag {
+    height: 100%;
+    border-radius: 0px !important;
+}
+
+
+.no-found-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  height: 40rem;
+}

@@ -1,0 +1,17 @@
+<div id="container" class="card note-card" style="border-radius: 10px; height: 100%;" (click)="modifyNote(modalNote)">
+
+    <ng-template #modalNote let-modalNote>
+        <app-note-modal (primaryAction)="updateNote(modalNote, $event)" [currentNote]="currentNote" [currentTag]="currentTag" [modalNote]="modalNote" [modalPrimaryActionText]="'Update'"></app-note-modal>
+    </ng-template>
+
+    <div>
+        <div class="card-body" style="padding: 0px !important;">
+            <img [src]="currentNote.image" class="note-image" *ngIf="currentNote.image" width="100%" />
+            <div style="padding: 24px;">
+                <h3>{{currentNote.title}}</h3>
+                <app-tag *ngIf = "currentTag" [tag] = "currentTag"></app-tag>
+                <p class="card-text">{{currentNote.description}}</p>
+            </div>
+        </div>
+    </div>
+</div>

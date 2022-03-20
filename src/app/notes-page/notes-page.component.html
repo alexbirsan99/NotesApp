@@ -1,0 +1,36 @@
+<div class="add-note-container">
+    <button type="button" (click)="createNewNote(modalNote)" class="btn
+    btn-primary add-note">
+    <i class="bi bi-plus"></i>
+</button>
+    <ng-template #modalNote let-modalNote>
+        <app-note-modal (primaryAction)="insertNote(modalNote, $event)" [modalPrimaryActionText]="modalPrimaryActionText" [modalNote]="modalNote"></app-note-modal>
+    </ng-template>
+</div>
+
+
+<div class="input-group">
+    <div ngbDropdown class="d-inline-block">
+        <button class="btn btn-primary" id="tagDropDown" ngbDropdownToggle>{{tagSearch.id?tagSearch.name:"Tags"}}</button>
+        <button class="btn btn-primary clearTag" (click)="tagSearch.id = ''"><i class="bi bi-x"></i></button>
+        <div ngbDropdownMenu aria-labelledby="tagDropDown">
+            <button *ngFor="let tag of tagUtils.getTags()" (click)="tagSearch=tag" ngbDropdownItem>{{tag.name}}</button>
+        </div>
+    </div>
+    <input type="text" [(ngModel)]="searchText" placeholder="Search..." class="form-control">
+    <div class="input-group-append">
+        <button class="btn btn-primary search" (click)="searchNotes()"><i class="bi bi-search"></i></button>
+    </div>
+</div>
+
+
+<div *ngIf = "notes.getNotes().length > 0" class="row grid">
+    <div *ngFor="let
+    note of notes.getNotes(); let i= index;">
+        <app-note [currentNote]="note"> </app-note>
+    </div>
+</div>
+
+<div *ngIf = "notes.getNotes().length === 0" class = "no-found-container">
+  <p>Notes not found :(</p>
+</div>

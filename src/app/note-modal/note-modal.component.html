@@ -1,0 +1,42 @@
+<div class="modal-content add-note-card" style="overflow:visible !important;">
+
+    <app-select-tag-dialog *ngIf="showDialogObservable|async" (window:resize)="closeDialog(false)" (closeEvent)="closeDialog($event)" id="dialog" (onTagSelected)="onTagSelected($event)" style="position: fixed; z-index:9999;"></app-select-tag-dialog>
+    <div class="modal-header" style="text-align: center; padding:0px !important; margin: 0px !important">
+        <div class="fluid-container col-12">
+            <a *ngIf="image" (click)="openImage()">
+                <img class="col-12 note-image" id="noteImage" [src]="image" />
+            </a>
+            <input class="col-12 form-control title" id="title" name="title" type="text" [value]="currentNote.title" />
+            <p class="create-date" *ngIf="currentNote.createDate">{{"Created on: " + formatDate(currentNote.createDate)}}</p>
+            <p class="modified-date" *ngIf="currentNote.modifyDate">{{"Modified on: " + formatDate(currentNote.modifyDate)}}</p>
+        </div>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            <app-tag id = "toggleTagDialog" (click) = "toggleDialog()" *ngIf = "currentTag" [tag] = "currentTag"></app-tag>
+        </div>
+        <form>
+            <div class="form-group">
+                <div style="margin: 0px; margin-top: 12px;">
+                    <textarea style="height: 20vh;" name="description" id="noteDescription" class="form-control" rows="6" placeholder="Description..." [value]="currentNote.description"></textarea>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="row" style="padding: 24px !important; padding-bottom: 20px !important;">
+        <input type="file" accept="image/*" id="image" name="image" (change)="onImageSelected($event)" style="display: none;" />
+        <div class="col-6">
+            <label for="image" class="btn btn-action" title="Add image">
+                <i class="bi bi-file-earmark-image"></i><input type="file"
+                    style="display: none;" accept="image/*" [value]="" />
+            </label>
+            <label *ngIf="currentNote.id" (click)="notes.deleteNote(currentNote.id); modalNote.close()" class="btn btn-action delete-btn" style="margin-left: 12px;" title="Delete Tag">
+                <i class="bi bi-trash"></i>
+            </label>
+        </div>
+        <div class="col-6 d-flex justify-content-end">
+            <button type="button" class="btn btn-secondary" style="margin-right: 8px;" (click)="modalNote.close()" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary" (click)="onPrimaryAction()">{{modalPrimaryActionText}}</button>
+        </div>
+    </div>
+</div>

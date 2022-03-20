@@ -1,0 +1,18 @@
+<div id="dialog" class="dialog">
+  <div style="width: 100%;">
+    <div style="float: left; padding: 12px 24px; padding-bottom: 0px !important;
+      font-size: 20px; font-weight: 600;">
+      <p>Tags</p>
+    </div>
+    <div style="float: right; padding: 2px 8px" (click)="close()">
+      <i class="bi bi-x dialog-icon"></i>
+    </div>
+    <div class="grid" style="overflow: auto; display: flex; padding: 16px
+      !important;">
+      <div *ngFor="let tag of tags;" style="display: flex;"
+        (click)="selectTag(tag)">
+        <!--<button class="tag" (click)="selectTag(tag)" [ngStyle]="getTagStyle(tag)">{{tag.name}}</button>-->
+        <app-tag [tag]="tag"></app-tag>
+      </div>
+    </div>
+</div>

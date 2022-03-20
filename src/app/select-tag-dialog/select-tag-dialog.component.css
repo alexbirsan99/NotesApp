@@ -1,0 +1,17 @@
+.dialog {
+    min-width: 100px;
+    max-width: 300px;
+    border-radius: 9px;
+    padding: 2px;
+    background-color: white;
+    box-shadow: 0px 0px 20px #a8a8a880;
+}
+
+.grid {
+    width: 100%;
+    overflow-x: overlay;
+    position: relative;
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 16px;
+}

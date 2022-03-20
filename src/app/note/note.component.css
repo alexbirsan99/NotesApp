@@ -1,0 +1,12 @@
+.note-image {
+    background-size: cover;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 15vh;
+}
+
+.note-card {
+    -webkit-box-shadow: 0px 1px 13px -4px rgba(0, 0, 0, 0.30) !important;
+    box-shadow: 0px 1px 13px -4px rgba(0, 0, 0, 0.30) !important;
+}

@@ -1,0 +1,36 @@
+<ng-template #modalTag let-modalTag>
+  <app-tag-modal [modalTag]="modalTag" [currentTag]="selectedTag"></app-tag-modal>
+</ng-template>
+
+<ul class="list-group list-group-flush">
+  <li class="list-group-item" *ngFor="let tag of tagUtils.getTags();">
+    <div class="row" style="padding: 16px 16px; vertical-align: center;">
+      <div class="col-11" (click)="editTag(tag,modalTag)">
+        <div class="row">
+          <div class="col-sm-3 col-md-2 col-sm-2 col-lg-1">
+            <div class="color-circle" [ngStyle]="getBackgroundColor(tag)"></div>
+          </div>
+          <div class="col-sm-9 col-md-10 col-sm-10 col-lg-11">
+            <p class="tag-name">{{tag.name}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-1">
+        <button class="btn btn-outline-danger action-btn"
+          (click)="deleteTag(tag)">
+          <i class="bi bi-trash"></i>
+          Delete
+        </button>
+      </div>
+    </div>
+  </li>
+</ul>
+
+
+
+<div class="add-tag-container">
+  <button type="button" class="btn
+    btn-primary add-tag" (click)="createNewTag(modalTag)">
+    <i class="bi bi-plus"></i>
+  </button>
+</div>

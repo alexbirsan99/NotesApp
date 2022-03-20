@@ -1,0 +1,52 @@
+.add-tag-container {
+  position: fixed !important;
+  bottom: 0% !important;
+  right: 0% !important;
+  padding-bottom: 48px;
+  padding-right: 48px;
+  z-index: 100;
+}
+
+.add-tag {
+  height: 60px;
+  width: 60px;
+  border-radius: 100px;
+  font-size: 32px;
+  padding: 0px !important;
+  box-shadow: 0px 0px 20px #888888;
+  z-index: 100;
+}
+
+.color-circle {
+  border-radius: 100%;
+  width: 50px !important;
+  height: 50px !important;
+}
+
+.tag-name {
+  font-size: 26px !important;
+  font-weight: 600;
+  height: 100%;
+}
+
+.action-btn {
+  float: right !important;
+  margin-left: 24px !important;
+  position: relative;
+  top: 15% !important;
+  border-radius: 100px;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .color-circle {
+    border-radius: 100%;
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .tag-name {
+    font-size: 20px !important;
+    font-weight: 600;
+    height: 100%;
+  }
+}
