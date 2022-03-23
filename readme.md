@@ -1,6 +1,5 @@
 # Note-ify
 
----
 
 This is a short presentation of the Note-ify web app.
 <br>
