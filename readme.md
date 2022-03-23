@@ -44,7 +44,7 @@ Below there is a short presentation of the app.
 <br>
 
 ![Markdown Logo](./image_docs/addtag.png)
-<p align = "center"><b>Add tag pop-up. <br>Each tag has a color and a title. This particular tag is used in the Shopping list note.</b></p>
+<p align = "center"><b>Add tag pop-up. <br>Each tag has a color and a title. This particular tag is used in the Shopping list note.<br> Each note can be edited once they are added.</b></p>
 
 
 <br>
