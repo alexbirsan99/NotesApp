@@ -13,9 +13,11 @@
     </div>
     <div class="navbar-nav nav-item" style="justify-content: center;">
         <a class="nav-nav-ti nav-link active" routerLink="">Notes</a>
+        <hr *ngIf = "getCurrentRoute() === '/'" class = "selected-item-line">
     </div>
     <div class="navbar-nav nav-item" style="justify-content: center;">
         <a class="nav-item nav-link active" routerLink="/tags">Tags</a>
+        <hr *ngIf = "getCurrentRoute() === '/tags'" class = "selected-item-line">
     </div>
 </nav>
 

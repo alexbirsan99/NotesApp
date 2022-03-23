@@ -1,120 +1,120 @@
 .title {
-    font-weight: 700;
-    font-size: 24px;
-    padding-left: 32px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-right: 32px;
-    border: 0;
-    font-size: 30px;
+  font-weight: 700;
+  font-size: 24px;
+  padding-left: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-right: 32px;
+  border: 0;
+  font-size: 30px;
 }
 
 .modal-body {
-    padding: 16px 40px !important;
+  padding: 16px 40px !important;
 }
 
 #noteDescription {
-    height: 300px !important;
-    vertical-align: top !important;
-    resize: none !important;
-    padding: 0px !important;
-    border: 0;
+  height: 300px !important;
+  vertical-align: top !important;
+  resize: none !important;
+  padding: 0px !important;
+  border: 0;
 }
 
 #noteDescription:focus {
-    border: 0 !important;
-    outline: none !important;
-    box-shadow: none !important;
+  border: 0 !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 #noteDescription:hover {
-    border: 0 !important;
-    outline: none !important;
-    box-shadow: none !important;
+  border: 0 !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 .title:focus {
-    border: 0 !important;
-    outline: none !important;
-    box-shadow: none !important;
+  border: 0 !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 .title:hover {
-    border: 0 !important;
-    outline: none !important;
-    box-shadow: none !important;
+  border: 0 !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 .btn-action {
-    border-color: grey;
-    border-width: 1px;
-    border-radius: 8px;
+  border-color: grey;
+  border-width: 1px;
+  border-radius: 8px;
 }
 
 .delete-btn {
-    color: #e01e37;
-    border-color: #e01e37;
+  color: #e01e37;
+  border-color: #e01e37;
 }
 
 .note-image {
-    background-size: cover;
-    object-fit: cover;
-    height: 22vh;
+  background-size: cover;
+  object-fit: contain;
+  height: 22vh;
 }
 
 .note-card {
-    border: 0px !important;
-    box-shadow: 0px 0px 20px #a8a8a863;
+  border: 0px !important;
+  box-shadow: 0px 0px 20px #a8a8a863;
 }
 
 .image-card {
-    width: 100px;
-    height: 80px;
-    border-radius: 10px;
+  width: 100px;
+  height: 80px;
+  border-radius: 10px;
 }
 
 .image-list {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .image-upload>input {
-    display: none;
+  display: none;
 }
 
 .modified-date {
-    text-align: left !important;
-    margin-left: 16px;
-    margin-right: 16px;
-    padding-left: 1rem;
-    font-size: 12px !important;
-    padding-bottom: 0px !important;
-    margin-bottom: 16px !important;
-    font-style: italic;
+  text-align: left !important;
+  margin-left: 16px;
+  margin-right: 16px;
+  padding-left: 1rem;
+  font-size: 12px !important;
+  padding-bottom: 0px !important;
+  margin-bottom: 16px !important;
+  font-style: italic;
 }
 
 .create-date {
-    text-align: left !important;
-    margin-left: 16px;
-    margin-right: 16px;
-    padding-left: 1rem;
-    margin-bottom: 0px !important;
-    padding-bottom: 0px !important;
-    font-size: 12px !important;
-    font-style: italic;
+  text-align: left !important;
+  margin-left: 16px;
+  margin-right: 16px;
+  padding-left: 1rem;
+  margin-bottom: 0px !important;
+  padding-bottom: 0px !important;
+  font-size: 12px !important;
+  font-style: italic;
 }
 
 .btn-secondary {
-    border-radius: 50px;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-bottom: 8px;
-    padding-top: 8px;
+  border-radius: 50px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 8px;
+  padding-top: 8px;
 }
 
 .btn-primary {
-    border-radius: 50px;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-bottom: 8px;
-    padding-top: 8px;
+  border-radius: 50px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 8px;
+  padding-top: 8px;
 }

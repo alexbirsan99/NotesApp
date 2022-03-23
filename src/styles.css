@@ -6,7 +6,7 @@
   border-style: solid;
   border-radius: 60px;
   padding: 2px 12px;
-  margin-top: 16px;
+  margin-top: 4px;
   margin-bottom: 16px;
   background-color: white;
   font-weight: 600;
@@ -21,7 +21,7 @@
   display: grid;
   width: 100%;
   margin: 0px !important;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   row-gap: 24px;
 }
 
@@ -34,7 +34,7 @@
 .nav-title {
   padding: 8px 48px 8px 0px;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 24px;
 }
 
 @media only screen and (min-width:526px) and (max-width:768px) {
