@@ -4,6 +4,8 @@
 
 This is a short presentation of the Note-ify web app.
 <br>
+Note-ify can be used on every device no matter of screen size.
+<br>
 Note-ify is a web app made in Angular and it's using the Notes API which can be found in another repository.
 <br>
 Below there is a short presentation of the app.
